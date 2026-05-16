@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Timezone API - Определение часового пояса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <h1>🕐 Часовой пояс</h1>
+    <div class="sub">Узнайте ваш часовой пояс и местное время</div>
+    <div class="btn-container">
+        <button class="timezone-btn" id="getTimezoneBtn">
+            🌍 Определить моё время
+        </button>
+    </div>
+    <div class="data-panel" id="infoPanel">
+        <div class="data-row">
+            <div class="data-label">
+                <span>🌐 ВРЕМЕННАЯ ЗОНА</span>
+            </div>
+            <div class="data-value" id="timezoneValue">—</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">
+                <span>📅 МЕСТНЫЕ ДАТА И ВРЕМЯ</span>
+            </div>
+            <div class="data-value" id="datetimeValue">—</div>
+        </div>
+    </div>
+    <footer>
+        * Для работы необходимо разрешить доступ к геолокации.<br>
+        Данные предоставлены Timezone API
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

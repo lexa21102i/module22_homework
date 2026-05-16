@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+    <h1>📱 Геоинформация</h1>
+    <div class="sub">Нажмите на кнопку — получите размеры экрана и координаты</div>
+    <div class="btn-container">
+        <button class="info-button" id="getInfoBtn">🌍 Получить данные</button>
+    </div>
+    <div class="data-panel" id="infoPanel">
+        <div class="data-row">
+            <span class="data-label">🖥️ Ширина экрана</span>
+            <span class="data-value" id="screenWidthValue">—</span>
+        </div>
+        <div class="data-row">
+            <span class="data-label">📏 Высота экрана</span>
+            <span class="data-value" id="screenHeightValue">—</span>
+        </div>
+        <div class="data-row">
+            <span class="data-label">📍 Геопозиция</span>
+            <span class="data-value" id="locationValue">—</span>
+        </div>
+    </div>
+    <footer>
+        * Координаты запрашиваются только при клике.<br>
+        Браузер может запросить разрешение на геолокацию.
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>   
+</html>

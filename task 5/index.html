@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>WebSocket Echo Chat | Геолокация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <h2>
+            💬 Эхо-чат 
+            <span class="status-badge" id="statusText">WebSocket</span>
+        </h2>
+        <div class="ws-status" id="wsStatusLabel">🔌 подключаемся...</div>
+    </div>
+    <div class="messages-area" id="messagesContainer">
+        <div class="message server-message">
+            <div class="bubble server-bubble">
+                ✨ Добро пожаловать! Отправьте текст или геолокацию.
+            </div>
+            <div class="message-meta">сервер ~ сейчас</div>
+        </div>
+        <div class="message server-message">
+            <div class="bubble server-bubble">
+                📡 Эхо-сервер повторяет ваши текстовые сообщения.<br>
+                🌍 Кнопка «Гео-локация» отправит ссылку на карту (ответ сервера игнорируется).
+            </div>
+            <div class="message-meta">инструкция</div>
+        </div>
+    </div>
+    <div class="input-panel">
+        <div class="input-group">
+            <input type="text" id="messageInput" class="text-input" placeholder="Введите сообщение..." autocomplete="off">
+            <button id="sendBtn" class="btn-send">✉️ Отправить</button>
+            <button id="geoBtn" class="btn-geo">📍 Гео-локация</button>
+        </div>
+        <div class="helper-note">
+            ⚡ Отправленный текст дублируется эхо-сервером. Гео-позиция создаёт карту (ответ эха не показываем).
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
